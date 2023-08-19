@@ -1,6 +1,6 @@
 #import test and training data
-test<- read.table("D:/Documents/MLA1/coristest.txt", header=TRUE, sep = ",")
-train<- read.table("D:/Documents/MLA1/coristrain.txt", header=TRUE, sep = ",")
+test<- read.table("./coristest.txt", header=TRUE, sep = ",")
+train<- read.table("./coristrain.txt", header=TRUE, sep = ",")
 
 #set dependent variables
 fmla<- as.formula(chd~.-row.names-chd)
